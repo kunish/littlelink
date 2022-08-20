@@ -1,0 +1,6 @@
+include:
+  - template: Kaniko.gitlab-ci.yml
+
+kaniko-build:
+  variables:
+    KANIKO_ARGS: "--insecure --skip-tls-verify"
